@@ -1,0 +1,148 @@
+
+{% extends 'chat/base.html' %}
+
+{% block body %}
+ <style>
+     .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+ </style>
+
+
+ <div class="m-10 font-medium text-blueGray-400">
+   
+    <input type="text" 
+    class="text-white" value="{{path}}" id="myInput">
+    <div class="float-right">            
+        {% if room.user == request.user %}
+            <button class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-purple shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                <a href="{% url 'edit_room' room.slug %}">Edit room</a>
+            </button>
+            
+            <button class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-purple shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                <a href="{% url 'delete_room' room.slug %}">Delete Room</a>
+            </button>
+        {% endif %}
+        <button class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-purple shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" onclick="myFunction()">Copy the room link </button>
+    </div>
+ </div>
+
+ <div class="message-container m-10  no-scrollbar overflow-auto h-[700px] p-3" id="message-container">
+    <div id="chat-messages">
+        {% for message in messages %}   
+        <div class="flow-root">  
+            {% if user == message.user %}
+            <div class="float-left message shadow-lg p-4 m-2 rounded-lg bg-purple-100">
+                <div class="text-sm text-grey-400"><a href="{% url 'profile' request.user.id %}">{{ message.user.username }}</a></div>
+                <div>{{message.message_content}}</div>
+                <div class="text-sm text-grey-400">{{message.date}}</div>
+            </div>
+
+            {% else %}
+            <div class="float-right message shadow-lg p-4 m-2 rounded-lg bg-blue-100">
+                <div class="text-sm text-grey-500"><a href="{% url 'profile' message.user.id %}">{{ message.user.username }}</a></div>
+                <div>{{message.message_content }}</div>
+                <div class="text-sm text-grey-500">{{message.date}}</div>       
+            </div>
+    
+           {% endif %}
+            
+        </div>
+        {% endfor %}
+    </div>
+ </div>
+ 
+<div class="form-container mu-10 fixed inset-x-0 bottom-0 bg-purple-400 p-2">
+    <form method="POST">
+        {% csrf_token %}
+        <textarea class="rounded px-2 w-1/2" id="message-input" name="message" placeholder="Enter message"></textarea>
+        <button class="rounded ml-auto pl-2 pr-2 bg-purple-200" id="send-button" type="submit">Send</button>  
+
+    </form>
+</div>
+
+<div>Get room slug</div>
+
+
+{{room.slug|json_script:"json-chatroomname"}}
+{{request.user.username | json_script:"json-username"}}
+
+
+<script>
+    const chatRoomName=JSON.parse(document.getElementById('json-chatroomname').textContent)
+    const username=JSON.parse(document.getElementById('json-username').textContent)
+    const chatSocket=new WebSocket(
+        'ws://'
+        +window.location.host
+        +'/ws/'
+        +chatRoomName
+        +'/'
+    )
+
+    function scroll(){
+         const mcontainer=docoument.getElementById('message-container')
+         mcontainer.scrollTop=mcontainer.scrollHeight
+
+    }
+
+    chatSocket.onmessage=function(e)
+    {
+        const data=JSON.parse(e.data)
+        if(data.message)
+        {
+             console.log('recieved msg ' , data.message)
+             let html= '<div class="message shadow-lg p-4 m-2 rounded-lg w-1/2 bg-purple-100">'
+                +'<div class="text-sm text-grey-500">'+data.username+'</div><div class="">'
+                +data.message+'</div><div class="text-sm text-grey-500">'+data.date+'</div></div>'
+             document.getElementById('chat-messages').innerHTML+=html
+             scroll()
+        }
+        else
+        {
+            alert('the message was empty')
+        }
+
+       
+    }
+
+    chatSocket.onclose=function(e)
+    {console.log('socket closed')}
+
+    document.getElementById("send-button").onclick=function(e)
+    {
+        e.preventDefault()
+        const messageInput= document.getElementById("message-input")
+        const message= messageInput.value 
+        messageInput.value=""
+
+        chatSocket.send(JSON.stringify({
+            'message':message,
+            'username':username,
+            'room':chatRoomName       
+
+        }))
+        messageInput.value=""
+    }
+
+
+   scroll()
+
+   function myFunction() 
+        {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            alert('room link copied')
+
+            
+        }
+</script>
+
+{% endblock %}

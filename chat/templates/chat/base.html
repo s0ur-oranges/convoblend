@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvoBlend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+      <nav class="bg-purple-300 shadow-lg px-2 py-3">
+        <div class="container flex flex-wrap justify-between mx-auto">
+            <a class="flex items-center" href="">
+                <img class="mr-3 h-20" src="{% static 'images\4198106-removebg-preview.png' %}" alt="logo">
+                <span class="self-center text-xl font-semibold" style="font-family:Pacifico; font-size:30px">ConvoBlend</span>
+            </a>
+
+            <div > 
+                    <ul class="flex flex-row text-white p-2 mt-4 rounded-lg border-grau-100 bg-purple-400">
+                        <li>
+                            <a class="block py-2 pl-3 pr-4 rounded" href="{% url 'index' %}">Rooms</a>
+                        </li>
+                        <li>
+                            <a class="block py-2 pl-3 pr-4 rounded " href="{% url 'home' %}">About</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li>
+                            <a class="block py-2 pl-3 pr-4 rounded " href="{% url 'logout' %}">Logout</a>
+                        </li>
+                        <li>
+                            <a class="block py-2 pl-3 pr-4 rounded " href="{% url 'profile' request.user.id %}">Profile</a>
+                        </li>
+                       
+                        {% else %}
+                        <li>
+                            <a class="block py-2 pl-3 pr-4 rounded " href="{% url 'login' %}">Login</a>
+                        </li>
+                       
+                        {% endif %}
+                    </ul>
+    
+                </div>
+            </div>
+
+        </div>
+
+      
+
+    </nav>
+    
+
+   
+    {% block body %}
+    {% endblock %}
+    
+</body>
+</html>
