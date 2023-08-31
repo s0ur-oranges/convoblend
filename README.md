@@ -72,9 +72,7 @@ ChatRoom page
 ```mkvirtualenv {name of your virtual env} ```
 
 3)After activating virtual environment , run 
-``` pip install django ```
-
-4) Also run ```pip install django-crispy-forms```
+``` pip install -r requirements.txt ```
 
 5)Then run this command to open the website in your own localhost
 ```python manage.py runserver```
