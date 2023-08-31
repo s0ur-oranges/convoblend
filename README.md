@@ -32,8 +32,7 @@ Here are some screenshots from the website:
 
 6)The app should open as follows:
 
-
- ![Screenshot (28)](https://user-images.githubusercontent.com/91944643/183061155-39f34be3-3baf-4b3c-a5b0-7f231d3714e0.png)
+![1](https://github.com/s0ur-oranges/convoblend/assets/91944643/34baeb2c-45cd-4024-90e1-cf72bda53c0e)
 
 
 
