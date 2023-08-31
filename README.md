@@ -77,10 +77,7 @@ ChatRoom page
 5)Then run this command to open the website in your own localhost
 ```python manage.py runserver```
 
-6)The app should open as follows:
-
-![1](https://github.com/s0ur-oranges/convoblend/assets/91944643/34baeb2c-45cd-4024-90e1-cf72bda53c0e)
-
+6)The app should open up on localhost.
 
 
 
