@@ -69,11 +69,9 @@ ChatRoom page
 
 1)Download source code
 
-2)After downloading , open the command prompt and navigate to main directory and activate a virtual env by running the command
+2)After downloading , open the command prompt and navigate to main directory.
 
-```mkvirtualenv {name of your virtual env} ```
-
-3)After activating virtual environment , run 
+3)Run 
 ``` pip install -r requirements.txt ```
 
 5)Then run this command to open the website in your own localhost
