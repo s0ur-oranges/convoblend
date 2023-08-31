@@ -6,20 +6,28 @@ A utility app for students containing functions like making notes , add deadline
  
 Here are some screenshots from the website:
 
+Home Screen
+
 
 ![1](https://github.com/s0ur-oranges/convoblend/assets/91944643/34baeb2c-45cd-4024-90e1-cf72bda53c0e)
 
 
+Login/Logout pages
+
 ![2](https://github.com/s0ur-oranges/convoblend/assets/91944643/ebf77341-9d4b-4cd8-9fa6-2734e9c714e1)
 
 
-![3](https://github.com/s0ur-oranges/convoblend/assets/91944643/2cf00413-6d8e-4223-bdaa-35a154f775d3)
 
+Profile pages
 
 ![createprofile](https://github.com/s0ur-oranges/convoblend/assets/91944643/009be3f0-d289-4db6-9304-5a0f423111ff)
 
 
 ![profilepage](https://github.com/s0ur-oranges/convoblend/assets/91944643/c9a3e33b-14e9-458a-a17e-3e7f67703482)
+
+
+
+
 
 
 
