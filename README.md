@@ -1,6 +1,6 @@
 # ConvoBlend
 
-A utility app for students containing functions like making notes , add deadlines for homeworks , create to-do lists , and finally an article summariser. To read about the article summariser , please visit https://github.com/s0ur-oranges/text-summarization-app
+ConvoBlend is a ChatRooms applications where users can register and create rooms for the prupose of real-time discussion with other users on various topics. Users can edit room description and delete a room. They also have the option of controlling their profile visibility. It utilises django channels and websockets for facilitating real-time chatting.
  
 ## Overview
  
@@ -9,7 +9,9 @@ Here are some screenshots from the website:
 Home Screen
 
 
+
 ![1](https://github.com/s0ur-oranges/convoblend/assets/91944643/34baeb2c-45cd-4024-90e1-cf72bda53c0e)
+
 
 
 
@@ -18,6 +20,7 @@ Login/Logout pages
 ![2](https://github.com/s0ur-oranges/convoblend/assets/91944643/ebf77341-9d4b-4cd8-9fa6-2734e9c714e1)
 
 ![Screenshot 2023-08-31 201650](https://github.com/s0ur-oranges/convoblend/assets/91944643/3c0b4fc6-7234-41ba-8b61-502fdd99634e)
+
 
 
 
@@ -31,6 +34,7 @@ Profile pages
 
 
 ![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/assets/91944643/00864358-42e7-4608-8f39-7b893311f66a)
+
 
 
 
@@ -55,9 +59,6 @@ ChatRoom page
 
 
  
-
-
-
 
 
 
