@@ -43,7 +43,9 @@ Rooms pages
 
 
 
-
+![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/assets/91944643/00864358-42e7-4608-8f39-7b893311f66a)
+![Screenshot 2023-08-31 165300](https://github.com/s0ur-oranges/convoblend/assets/91944643/5f7c84e5-e8f8-4d70-9558-3528cde59c28)
+![Screenshot 2023-08-31 191423](https://github.com/s0ur-oranges/convoblend/assets/91944643/80812ea6-e30d-4525-a085-526f65efaf94)
 
 
 
