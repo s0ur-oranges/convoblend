@@ -30,22 +30,24 @@ Profile pages
 ![profilepage](https://github.com/s0ur-oranges/convoblend/assets/91944643/c9a3e33b-14e9-458a-a17e-3e7f67703482)
 
 
+![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/assets/91944643/00864358-42e7-4608-8f39-7b893311f66a)
+
+
+
 Index Page
 
+![Screenshot 2023-08-31 191423](https://github.com/s0ur-oranges/convoblend/assets/91944643/80812ea6-e30d-4525-a085-526f65efaf94)
 
 
-Rooms pages
+
+ChatRoom page
 
 ![Screenshot 2023-08-31 201759](https://github.com/s0ur-oranges/convoblend/assets/91944643/ea3fabd4-a47b-4994-85e1-a699423ca959)
 
 ![Screenshot 2023-08-31 201818](https://github.com/s0ur-oranges/convoblend/assets/91944643/547b1486-ee07-46c6-bab4-e66b4c1c57ba)
-![Screenshot 2023-08-31 201956](https://github.com/s0ur-oranges/convoblend/assets/91944643/1ccd112d-60f5-4b74-bd69-81bf54a43da6)
 
 
 
-![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/assets/91944643/00864358-42e7-4608-8f39-7b893311f66a)
-![Screenshot 2023-08-31 165300](https://github.com/s0ur-oranges/convoblend/assets/91944643/5f7c84e5-e8f8-4d70-9558-3528cde59c28)
-![Screenshot 2023-08-31 191423](https://github.com/s0ur-oranges/convoblend/assets/91944643/80812ea6-e30d-4525-a085-526f65efaf94)
 
 
 
