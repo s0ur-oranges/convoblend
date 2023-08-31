@@ -1,6 +1,7 @@
 # ConvoBlend
 
-ConvoBlend is a ChatRooms applications where users can register and create chatrooms for the purpose of real-time discussion with other users on various topics. Users can edit room description and also delete a room if they wish. They also have the option of controlling their profile visibility. It utilises django channels and websockets for facilitating real-time chatting.
+ConvoBlend is a ChatRooms application where users can register and create chatrooms for the purpose of real-time discussion with other users on various topics. Users can edit room description and also delete a room if they wish. Search functionality is supported and pagination of rooms on the index page is done. Users also have the option of controlling their profile visibility. 
+It utilises django channels and websockets for facilitating real-time chatting.  
  
 ## Overview
  
