@@ -42,9 +42,11 @@ Index Page
 
 ChatRoom page
 
-![Screenshot 2023-08-31 201759](https://github.com/s0ur-oranges/convoblend/assets/91944643/ea3fabd4-a47b-4994-85e1-a699423ca959)
 
 ![Screenshot 2023-08-31 201818](https://github.com/s0ur-oranges/convoblend/assets/91944643/547b1486-ee07-46c6-bab4-e66b4c1c57ba)
+
+
+![Screenshot 2023-08-31 201956](https://github.com/s0ur-oranges/convoblend/assets/91944643/56e272c2-758d-4fcc-8ee4-d2413d75de9b)
 
 
 
