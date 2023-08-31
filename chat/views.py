@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     return render(request , 'chat/home.html')
 
-@login_required
+
 def index(request):
     rooms=ChatRoom.objects.all()
     form=RoomForm()
@@ -37,7 +37,6 @@ def index(request):
     return render(request , 'chat/index.html',{'rooms':rooms , 'form':form})
 
 
-@login_required
 def chatroom(request,slug):
     user=request.user
     room=ChatRoom.objects.get(slug=slug)
