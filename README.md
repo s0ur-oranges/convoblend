@@ -6,15 +6,13 @@ It utilises django channels and websockets for facilitating real-time chatting.
 ## Overview
  
 Here are some screenshots from the website:
-![a](https://github.com/s0ur-oranges/convoblend/blob/main/static/images/11951077-removebg-preview.png)
-
 
 
 Home Screen
 
 
 
-![1](https://github.com/s0ur-oranges/convoblend/assets/91944643/34baeb2c-45cd-4024-90e1-cf72bda53c0e)
+![1](https://github.com/s0ur-oranges/convoblend/blob/main/assets/home.png)
 
 
 
