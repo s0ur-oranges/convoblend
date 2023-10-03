@@ -19,9 +19,9 @@ Home Screen
 
 Login/Logout pages
 
-![2](https://github.com/s0ur-oranges/convoblend/assets/91944643/ebf77341-9d4b-4cd8-9fa6-2734e9c714e1)
+![2](https://github.com/s0ur-oranges/convoblend/blob/main/assets/login.png)
 
-![Screenshot 2023-08-31 201650](https://github.com/s0ur-oranges/convoblend/assets/91944643/3c0b4fc6-7234-41ba-8b61-502fdd99634e)
+![3](https://github.com/s0ur-oranges/convoblend/blob/main/assets/logout.png)
 
 
 
@@ -29,30 +29,30 @@ Login/Logout pages
 
 Profile pages
 
-![createprofile](https://github.com/s0ur-oranges/convoblend/assets/91944643/009be3f0-d289-4db6-9304-5a0f423111ff)
+![createprofile](https://github.com/s0ur-oranges/convoblend/blob/main/assets/create_profile.png)
 
 
-![profilepage](https://github.com/s0ur-oranges/convoblend/assets/91944643/c9a3e33b-14e9-458a-a17e-3e7f67703482)
+![profilepage](https://github.com/s0ur-oranges/convoblend/blob/main/assets/profile.png)
 
 
-![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/assets/91944643/00864358-42e7-4608-8f39-7b893311f66a)
+![Screenshot 2023-08-31 191842](https://github.com/s0ur-oranges/convoblend/blob/main/assets/private_profile.png)
 
 
 
 
 Index Page
 
-![Screenshot 2023-08-31 191423](https://github.com/s0ur-oranges/convoblend/assets/91944643/80812ea6-e30d-4525-a085-526f65efaf94)
+![Screenshot 2023-08-31 191423](https://github.com/s0ur-oranges/convoblend/blob/main/assets/index.png)
 
 
 
 ChatRoom page
 
 
-![Screenshot 2023-08-31 201818](https://github.com/s0ur-oranges/convoblend/assets/91944643/547b1486-ee07-46c6-bab4-e66b4c1c57ba)
+![Screenshot 2023-08-31 201818](https://github.com/s0ur-oranges/convoblend/blob/main/assets/room1.png)
 
 
-![Screenshot 2023-08-31 201956](https://github.com/s0ur-oranges/convoblend/assets/91944643/56e272c2-758d-4fcc-8ee4-d2413d75de9b)
+![Screenshot 2023-08-31 201956](https://github.com/s0ur-oranges/convoblend/blob/main/assets/room2.png)
 
 
 
